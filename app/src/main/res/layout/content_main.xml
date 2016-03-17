@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ozankyncu.kullanici_giris.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:paddingTop="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kullanıcı Adı"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_Kullaniciadi"
+            android:layout_gravity="center_horizontal"
+            android:hint="Kullanici Adini Giriniz"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Şifre"
+            android:paddingTop="15dp"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Sifre Giriniz"
+            android:id="@+id/edt_Sifre"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tum Kullanicilari Listele"
+        android:clickable="true"
+        android:id="@+id/txt_tlistele"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş"
+            android:layout_weight="1"
+            android:id="@+id/btn_giris"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yeni Üye"
+            android:id="@+id/btn_yeniuye" />
+    </LinearLayout>
+</RelativeLayout>
